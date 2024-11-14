@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       outputDiv.textContent = "Please enter valid text and a positive delay.";
       return;
     }
-
-    outputDiv.textContent = "Waiting...";
+	  
     await new Promise((resolve) => setTimeout(resolve, delay));
     outputDiv.textContent = text;
   }
