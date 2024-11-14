@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.addEventListener("DOMContentLoaded", () => {
   const textInput = document.getElementById("text");
   const delayInput = document.getElementById("delay");
@@ -15,8 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     outputDiv.textContent = "Waiting...";
-    const timeout = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-    await timeout(delay);
+    await new Promise((resolve) => setTimeout(resolve, delay));
     outputDiv.textContent = text;
   }
 
